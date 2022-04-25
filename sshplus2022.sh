@@ -58,7 +58,7 @@ installweb
 }
 installweb(){
 cd /var/www/html
-wget https://raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/2022sshplus/2022.zip
+wget https://raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/2022.zip
 unzip 2022.zip
 sed -i "s;1010;$root_password;g" /var/www/html/pages/system/pass.php > /dev/null 2>&1
 chmod 777 -R /var/www/
@@ -66,7 +66,7 @@ cd
 createdb
 }
 createdb(){
-wget https://raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/2022sshplus/sshplus.sql
+wget https://raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/sshplus.sql
 mysql -h localhost -u root -p$root_password -e "CREATE DATABASE sshplus"
 mysql -h localhost -u root -p$root_password --default_character_set utf8 sshplus < sshplus.sql
 rm banco.sql
@@ -78,7 +78,7 @@ crontab -l > mycron
 echo "@reboot /root/startup" >> mycron
 crontab mycron
 rm mycron
-wget https://raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/2022sshplus/cronc.sh
+wget https://raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/cronc.sh
 wget https://raw.githubusercontent.com/SPEEDNET244/phpfix/main/cronb.sh
 wget https://raw.githubusercontent.com/SPEEDNET244/phpfix/main/clean.sh
 wget https://raw.githubusercontent.com/SPEEDNET244/phpfix/main/startup.sh
