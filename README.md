@@ -15,7 +15,7 @@ apt install dos2unix -y; wget https://raw.githubusercontent.com/wellzin-blip/v20
 
 # INSTALAR PAINELWEB GESTOR-SSH DEBIAN 8 OU UBUNTU 14!
 ```
-wget raw.githubusercontent.com/wellzin-blip/v2022/master/gestorssh/install ; bash install
+wget raw.githubusercontent.com/SPEEDNET244/2022sshplus/main/sshplus2022/install ; bash install
 ```
 
 # DEFINIR/ALTERAR SENHA ROOT
